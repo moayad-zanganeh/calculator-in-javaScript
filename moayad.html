@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./moayad.css">
+    <link rel="stylesheet" href="./cssreset.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+          <div class="calculator">
+            <div class="display">
+              <input type="text" class="input" id="inp" placeholder="0" value="">
+              <div class="temp-result"></div>
+            </div>
+            <div class="all_button">
+              <div class="button all-clear" onclick="clearAll()">C</div>
+              <div class="button last-entity-clear" onclick="clearLast()">CE</div>
+              <div class="button operation">%</div>
+              <div class="button operation" onclick="divide()">/</div>
+              <div class="button number" onclick="add_digit('7')">7</div>
+              <div class="button number" onclick="add_digit('8')">8</div>
+              <div class="button number" onclick="add_digit('9')">9</div>
+              <div class="button operation" onclick="times()">x</div>
+              <div class="button number" onclick="add_digit('4')">4</div>
+              <div class="button number" onclick="add_digit('5')">5</div>
+              <div class="button number" onclick="add_digit('6')">6</div>
+              <div class="button operation" onclick="sub()">-</div>
+              <div class="button number" onclick="add_digit('1')">1</div>
+              <div class="button number" onclick="add_digit('2')">2</div>
+              <div class="button number" onclick="add_digit('3')">3</div>
+              <div class="button operation" onclick="sum()">+</div>
+              <div class="button btn-0 number" onclick="add_digit('0')">0</div>
+              <div class="button number dot" onclick="decimal()">.</div>
+              <div class="button equal">=</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="./calculator.js"></script>
+</body>
+</html>
